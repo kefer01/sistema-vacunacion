@@ -1,0 +1,1 @@
+function iniciarApp(){menuHamburguesa()}function menuHamburguesa(){const e=document.querySelector(".navegacion");document.querySelector(".menu-hamburguesa").addEventListener("click",()=>{e.classList.toggle("mostrar")})}document.addEventListener("DOMContentLoaded",(function(){iniciarApp()}));

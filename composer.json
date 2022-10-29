@@ -1,0 +1,22 @@
+{
+    "name": "kevinoliva/app-salon",
+    "description": "Proyecto PHP 8, MVC, SQL, SASS, GULP",
+    "type": "proyect",
+    "autoload": {
+        "psr-4": {
+            "Kevinoliva\\AppSalon\\": "src/",
+            "MVC\\": "./",
+            "Controllers\\": "./controllers",
+            "Model\\": "./models",
+            "Classes\\": "./classes"
+        }
+    },
+    "authors": [{
+        "name": "kefer01",
+        "email": "kefer01@gmail.com"
+    }],
+    "require": {
+        "phpmailer/phpmailer": "^6.6",
+        "vlucas/phpdotenv": "^5.5"
+    }
+}
