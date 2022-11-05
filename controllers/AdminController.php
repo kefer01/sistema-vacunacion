@@ -26,7 +26,7 @@ class AdminController {
         $consulta .= " ON citas.usuarioId=usuarios.id  ";
         $consulta .= " LEFT OUTER JOIN vacunas ";
         $consulta .= " ON vacunas.id = citas.vacunaId ";
-        $consulta .= " WHERE fecha =  '${fecha}' AND estatus = 1 ";
+        $consulta .= " WHERE fecha =  '${fecha}' AND estatus = 0 ";
 
         $citas = AdminCita::SQL($consulta);
 

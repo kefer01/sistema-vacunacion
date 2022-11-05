@@ -16,7 +16,7 @@ include_once __DIR__ . '/../templates/barra.php';
         <div>
             <h3>Imprimir constancia de vacunación</h3>
             <img src="/build/img/constancia.png" alt="">
-            <a class="boton" href="">Imprimir</a>
+            <a class="boton" href="../cita/constancia">Imprimir</a>
         </div>
     </div>
 </div>

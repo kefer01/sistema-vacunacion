@@ -42,6 +42,7 @@ $router->get('/mensaje', [LoginController::class, 'mensaje']);
 
 // Area privada
 $router->get('/cita', [CitaController::class, 'index']);
+$router->get('/cita/constancia', [CitaController::class, 'generarPDF']);
 $router->get('/admin', [AdminController::class, 'index']);
 
 // Usuario

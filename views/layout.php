@@ -26,7 +26,7 @@ $auth = $_SESSION['login'] ?? false;
                     <img class="menu-hamburguesa" src="/build/img/menu-hamburguesa.png" alt="">
                 </div>
                 <div class="derecha">
-                    <nav class="navegacion mostrar">
+                    <nav class="navegacion ver">
                         <a href="/cita">Registro</a>
                         <a href="/centros">Centros de Vacunación</a>
                         <a href="/blog">Blog</a>

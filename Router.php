@@ -53,4 +53,18 @@ class Router
         $contenido = ob_get_clean(); // Limpia el Buffer
         include_once __DIR__ . '/views/layout.php';
     }
+
+    public function renderSinVista($view, $datos = []) {
+
+        foreach ($datos as $key => $value) {
+            $$key = $value;
+        }
+        ob_start(); //Almacenamiento en memoria durante un momento...
+
+        include __DIR__ . "/views/$view.php";
+
+        $contenido = ob_get_clean(); //Limpia el Buffer
+
+        include __DIR__ . "/views/layout_vacio.php";
+    }
 }

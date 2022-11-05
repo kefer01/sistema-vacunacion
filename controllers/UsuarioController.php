@@ -7,7 +7,7 @@ use MVC\Router;
 class UsuarioController {
 
     public static function index(Router $router) {
-
+        isAuth();
         $router->render('usuario/index', [
             'nombre' => $_SESSION['nombre'],
             'vacunas' => $_SESSION['vacunas']
